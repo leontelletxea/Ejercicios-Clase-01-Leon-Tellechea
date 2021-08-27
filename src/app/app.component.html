@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejercicios</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container ">
+      <div class="row mt-5">
+          <h2 class="col-2 offset-4 text-info">{{title}}</h2>
+      </div>
+      <div class="row justify-content-center mt-2">
+          <div class="col-12 col-lg-5 mt-2 p-4 rounded " style="background-color: lightgray;">
+                  <div class="mb-3">
+                      <label class="form-label">Titulo</label>
+                      <div class="d-flex">
+                          <input type="text" class="form-control" placeholder="Titulo" [(ngModel)]=title>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Numero 1</label>
+                    <div class="d-flex">
+                        <input type="number" class="form-control" placeholder="Numero 1" [(ngModel)]=edadUno>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Numero 2</label>
+                    <div class="d-flex"> 
+                        <input type="number" class="form-control" placeholder="Numero 2" [(ngModel)]=edadDos>
+                    </div>
+                  </div>
+                  <!-- alert start -->
+                  <div class="alert alert-primary" role="alert">
+                      <h4 class="fas fa-times close" style="cursor: pointer">La suma de {{edadUno}} + {{edadDos}} = {{suma}}</h4>
+                      <h4 class="fas fa-times close" style="cursor: pointer">El promedio de {{edadUno}} + {{edadDos}} = {{promedio}}</h4>
+                  </div>
+                  <!-- alert end -->
+                  <div class="row justify-content-around mt-4">
+                      <button type="button" class="col-5 btn btn-primary" (click)=Calcular()>Calcular</button>
+                      <button type="reset" class="col-5 btn btn-warning" (click)=Limpiar()>Limpiar</button>
+                  </div>
+          </div>
+      </div>
+  </div>
+</body>
+<!-- <app-bienvenido></app-bienvenido>
+     <app-login></app-login>
+     <app-error></app-error> -->
+</html>
