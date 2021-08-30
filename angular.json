@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ejercicios": {
+    "leon-tellechea-labo4": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ejercicios",
+            "outputPath": "dist/leon-tellechea-labo4",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ejercicios:build:production"
+              "browserTarget": "leon-tellechea-labo4:build:production"
             },
             "development": {
-              "browserTarget": "ejercicios:build:development"
+              "browserTarget": "leon-tellechea-labo4:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ejercicios:build"
+            "browserTarget": "leon-tellechea-labo4:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "ejercicios"
+  "defaultProject": "leon-tellechea-labo4"
 }
